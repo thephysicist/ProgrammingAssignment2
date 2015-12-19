@@ -77,3 +77,13 @@ cacheSolve <- function(x, ...)
     ## return the just-computed inverse
     return(x$getInverse())
 }
+
+
+## ========================================================================
+## Unit testing: Uncomment the lines below for testing
+## ========================================================================
+##
+#x <- makeCacheMatrix(matrix(rnorm(9), 3, 3))
+#cacheSolve(x)
+#z <- x$get() %*% x$getInverse() # z should be unit matrix
+
